@@ -7,7 +7,11 @@ function Board({ data }) {
   const { cases, todayDeaths, recovered, deaths, todayCases } = data;
 
   const getValue = (value) =>
-    value ? value : <Skeleton variant="text" width={182} height={60} />;
+    typeof value === "number" ? (
+      value
+    ) : (
+      <Skeleton variant="text" width={182} height={60} />
+    );
 
   return (
     <Grid container spacing={4}>
