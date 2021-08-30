@@ -1,4 +1,5 @@
 import React, { memo } from "react";
+// eslint-disable-next-line
 import RefreshIcon from "../../../assets/images/refresh.svg";
 import {
   Card,
@@ -13,6 +14,7 @@ import { CardPanelContentStyled, ItemStyled } from "./style";
 const navigatorHasShare = navigator.share;
 
 function Panel({ updateAt, onChange, data, country, getCoviddata }) {
+  // eslint-disable-next-line
   const { cases, recovered, deaths, todayCases, todayDeaths } = data;
 
   const renderCountries = (country, index) => (

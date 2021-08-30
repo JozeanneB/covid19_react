@@ -12,4 +12,5 @@ function getCountry(country) {
   );
 }
 
+// eslint-disable-next-line
 export default { getCountry };
