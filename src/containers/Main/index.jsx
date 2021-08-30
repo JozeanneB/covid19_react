@@ -1,5 +1,4 @@
-import React, { memo, useCallback, useState, useEffect } from "react";
-
+import React, { memo, useState, useCallback, useEffect } from "react";
 import Api from "../../api";
 import Board from "./components/Board";
 import Panel from "./components/Panel";
@@ -12,7 +11,7 @@ function Main() {
 
   const getCovidData = useCallback((country) => {
     Api.getCountry(country).then((data) => setData(data));
-  });
+  }, []);
 
   useEffect(() => {
     getCovidData(country);

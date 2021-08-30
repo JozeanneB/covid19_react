@@ -1,6 +1,5 @@
 import styled from "styled-components";
-
-import { Typography, CardContent } from "../../../components";
+import { CardContent, Typography } from "../../../components";
 
 export const LabelStyled = styled(Typography)`
   font-weight: 500;
@@ -17,13 +16,13 @@ export const CardContentStyled = styled(CardContent)`
 `;
 
 export const CardPanelContentStyled = styled(CardContent)`
-  dispaly: flex;
+  display: flex;
   justify-content: space-between;
   padding: 25px;
 `;
 
 export const ItemStyled = styled.div`
-  dispaly: flex;
+  display: flex;
   justify-content: space-between;
   min-width: 150px;
 `;
