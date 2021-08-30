@@ -1,8 +1,5 @@
-// eslint-disable-next-line
 import React, { memo } from "react";
-// eslint-disable-next-line
 import PropTypes from "prop-types";
-
 import { Card as CardUI } from "../../../components";
 import { LabelStyled, ValueStyled, CardContentStyled } from "./style";
 
@@ -17,4 +14,4 @@ function Card({ value, label, color }) {
   );
 }
 
-export default Card;
+export default memo(Card);
